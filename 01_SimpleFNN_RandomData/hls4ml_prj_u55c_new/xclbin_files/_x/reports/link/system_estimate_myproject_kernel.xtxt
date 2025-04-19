@@ -1,0 +1,57 @@
+===============================================================================
+Version:    v++ v2022.1 (64-bit)
+Build:      SW Build 3524075 on 2022-04-13-17:42:45
+Copyright:  Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Created:    Wed Apr 16 09:46:16 2025
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             myproject_kernel
+Target Device:           xilinx:u55c:gen3x16_xdma_3:202210.1
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library    Compute Units
+-----------  ----  ------------------  ----------------  -------------
+myproject    c     fpga0:OCL_REGION_0  myproject_kernel  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     myproject_kernel
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                                                         Target Frequency  Estimated Frequency
+------------  -----------  ------------------------------------------------------------------  ----------------  -------------------
+myproject_1   myproject    dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s     300.300293        411.015198
+myproject_1   myproject    relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config4_s         300.300293        1031.99182
+myproject_1   myproject    dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s     300.300293        421.052643
+myproject_1   myproject    relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s         300.300293        1031.99182
+myproject_1   myproject    dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s     300.300293        443.852631
+myproject_1   myproject    sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s  300.300293        411.015198
+myproject_1   myproject    myproject                                                           300.300293        284.495026
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                                                         Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  ------------------------------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+myproject_1   myproject    dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s     1               73             73            73              0.243 us         0.243 us        0.243 us
+myproject_1   myproject    relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config4_s         1               0              0             0               0 ns             0 ns            0 ns
+myproject_1   myproject    dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s     1               2              2             2               6.666 ns         6.666 ns        6.666 ns
+myproject_1   myproject    relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s         1               0              0             0               0 ns             0 ns            0 ns
+myproject_1   myproject    dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s     1               1              1             1               3.333 ns         3.333 ns        3.333 ns
+myproject_1   myproject    sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s  1               71             71            71              0.237 us         0.237 us        0.237 us
+myproject_1   myproject    myproject                                                           1               152            152           152             0.534 us         0.534 us        0.534 us
+
+Area Information
+Compute Unit  Kernel Name  Module Name                                                         FF     LUT    DSP  BRAM  URAM
+------------  -----------  ------------------------------------------------------------------  -----  -----  ---  ----  ----
+myproject_1   myproject    dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s     5129   16796  0    0     0
+myproject_1   myproject    relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config4_s         0      1792   0    0     0
+myproject_1   myproject    dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s     11763  48217  0    0     0
+myproject_1   myproject    relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s         0      812    0    0     0
+myproject_1   myproject    dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s     156    1256   0    0     0
+myproject_1   myproject    sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s  212    178    0    1     0
+myproject_1   myproject    myproject                                                           22772  73806  0    1     0
+-------------------------------------------------------------------------------

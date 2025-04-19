@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "myproject",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/csl\/sky\/hls4ml_practice\/hls4ml_prj_u55c_new\/build_prj.tcl",
+          "sourceLine": "184",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "myproject"
+              }]
+          }
+        }]
+    }]}

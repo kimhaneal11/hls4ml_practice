@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Apr 16 07:24:03 2025
+# Process ID: 553539
+# Current directory: /home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new
+# Command line: vivado -mode batch -source design.tcl
+# Log file: /home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/vivado.log
+# Journal file: /home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/vivado.jou
+# Running On: gpu2, OS: Linux, CPU Frequency: 800.156 MHz, CPU Physical cores: 20, Host memory: 64067 MB
+#-----------------------------------------------------------
+source design.tcl
+couldn't read file "design.tcl": no such file or directory
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 16 07:24:09 2025...

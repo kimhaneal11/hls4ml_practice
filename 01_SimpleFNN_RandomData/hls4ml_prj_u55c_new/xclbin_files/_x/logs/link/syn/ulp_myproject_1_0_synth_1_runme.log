@@ -1,0 +1,873 @@
+
+*** Running vivado
+    with args -log ulp_myproject_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ulp_myproject_1_0.tcl
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source ulp_myproject_1_0.tcl -notrace
+INFO: Dispatch client connection id - 35001
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/myproject_prj/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/Xilinx/Vitis/2022.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:myproject:1.0'. The one found in IP location '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_1_0' will take precedence over the same IP in location /home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/myproject_prj/solution1/impl/ip
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:clk_metadata_adapter:1.0'. The one found in IP location '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/pxi_ii_infra/clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pipeline_reg:1.0'. The one found in IP location '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/pxi_ii_infra/pipeline_reg_v1_0' will take precedence over the same IP in location /home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/pipeline_reg_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:shell_utils_build_info:1.0'. The one found in IP location '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/shell_utils_build_info_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_clk_metadata_adapter:1.0'. The one found in IP location '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/axi_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/pxi_ii_infra/axi_clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_clk_metadata_adapter:1.0'. The one found in IP location '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/other_ipdefs/axis_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/.local/hw_platform/iprepo/ipdefs/pxi_ii_infra/axis_clk_metadata_adapter_v1_0
+Command: synth_design -top ulp_myproject_1_0 -part xcu55c-fsvh2892-2L-e -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu55c'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu55c'
+INFO: [Device 21-403] Loading part xcu55c-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 566290
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/home/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3658.992 ; gain = 337.766 ; free physical = 12796 ; free virtual = 43167
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ulp_myproject_1_0' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_myproject_1_0/synth/ulp_myproject_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'myproject' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_mul_16s_5ns_21_1_1' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_mul_16s_5ns_21_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_mul_16s_5ns_21_1_1' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_mul_16s_5ns_21_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_mul_16s_5s_21_1_1' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_mul_16s_5s_21_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_mul_16s_5s_21_1_1' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_mul_16s_5s_21_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config4_s' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config4_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config4_s' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config4_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_relu_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_relu_config7_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s_sigmoid_tabkb' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s_sigmoid_tabkb.v:7]
+INFO: [Synth 8-3876] $readmem data file './myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s_sigmoid_tabkb.dat' is read successfully [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s_sigmoid_tabkb.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s_sigmoid_tabkb' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s_sigmoid_tabkb.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_control_s_axi' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_control_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_control_s_axi.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_control_s_axi' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_store' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_fifo' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_srl' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_srl' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_fifo' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_fifo__parameterized0' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_mem' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_mem' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_fifo__parameterized0' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_fifo__parameterized1' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_srl__parameterized0' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_srl__parameterized0' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_fifo__parameterized1' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_fifo__parameterized2' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_srl__parameterized1' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_srl__parameterized1' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_fifo__parameterized2' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_store' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_load' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_fifo__parameterized3' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_mem__parameterized0' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_mem__parameterized0' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_fifo__parameterized3' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_load' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_write' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_reg_slice' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_reg_slice' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_fifo__parameterized4' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_srl__parameterized2' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_srl__parameterized2' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_fifo__parameterized4' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_throttle' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_reg_slice__parameterized0' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_reg_slice__parameterized0' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_fifo__parameterized5' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_srl__parameterized3' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_srl__parameterized3' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_fifo__parameterized5' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_fifo__parameterized6' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_srl__parameterized4' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_srl__parameterized4' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_fifo__parameterized6' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_throttle' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_reg_slice__parameterized1' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_reg_slice__parameterized1' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2352]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2355]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_write' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_read' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:1468]
+INFO: [Synth 8-6157] synthesizing module 'myproject_gmem_m_axi_reg_slice__parameterized2' [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_reg_slice__parameterized2' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:1844]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi_read' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:1468]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_gmem_m_axi' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_gmem_m_axi.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myproject' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_myproject_1_0' (0#1) [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_myproject_1_0/synth/ulp_myproject_1_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c162/hdl/verilog/myproject_control_s_axi.v:288]
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module myproject_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module myproject_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module myproject_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module myproject_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module myproject_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module myproject_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module myproject_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module myproject_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s_sigmoid_tabkb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_ARREADY in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RVALID in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[255] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[254] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[253] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[252] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[251] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[250] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[249] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[248] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[247] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[246] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[245] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[244] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[243] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[242] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[241] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[240] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[239] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[238] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[237] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[236] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[235] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[234] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[233] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[232] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[231] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[230] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[229] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[228] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[227] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[226] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[225] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[224] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[223] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[222] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[221] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[220] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[219] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[218] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[217] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[216] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[215] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[214] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[213] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[212] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[211] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[210] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[209] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[208] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[207] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[206] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[205] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[204] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[203] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[202] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[201] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[200] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[199] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[198] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[197] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[196] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[195] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[194] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[193] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[192] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[191] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[190] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[189] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[188] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[187] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[186] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[185] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[184] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[183] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[182] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[181] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[180] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[179] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[178] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[177] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[176] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[175] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[174] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[173] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[172] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[171] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[170] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[169] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[168] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_RDATA[167] in module myproject_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3870.805 ; gain = 549.578 ; free physical = 12935 ; free virtual = 43307
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3882.680 ; gain = 561.453 ; free physical = 12889 ; free virtual = 43260
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3882.680 ; gain = 561.453 ; free physical = 12889 ; free virtual = 43260
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.59 . Memory (MB): peak = 3882.680 ; gain = 0.000 ; free physical = 13250 ; free virtual = 43621
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_myproject_1_0/constraints/myproject_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4033.211 ; gain = 0.000 ; free physical = 16319 ; free virtual = 46701
+Finished Parsing XDC File [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_myproject_1_0/constraints/myproject_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_myproject_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_myproject_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4033.211 ; gain = 0.000 ; free physical = 16300 ; free virtual = 46682
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:01 . Memory (MB): peak = 4050.055 ; gain = 16.844 ; free physical = 16150 ; free virtual = 46531
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 4050.055 ; gain = 728.828 ; free physical = 13543 ; free virtual = 43919
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'myproject_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'myproject_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_gmem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_gmem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_gmem_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_gmem_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'myproject_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'myproject_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_gmem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_gmem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_gmem_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_gmem_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 4061.977 ; gain = 740.750 ; free physical = 11774 ; free virtual = 42155
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 4     
+	   2 Input   52 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   21 Bit       Adders := 64    
+	   2 Input   21 Bit       Adders := 16    
+	   2 Input   20 Bit       Adders := 19    
+	   3 Input   20 Bit       Adders := 253   
+	   3 Input   19 Bit       Adders := 206   
+	   2 Input   19 Bit       Adders := 71    
+	   6 Input   16 Bit       Adders := 30    
+	   5 Input   16 Bit       Adders := 27    
+	   2 Input   16 Bit       Adders := 157   
+	   4 Input   16 Bit       Adders := 39    
+	   9 Input   16 Bit       Adders := 21    
+	   3 Input   16 Bit       Adders := 147   
+	   8 Input   16 Bit       Adders := 19    
+	  10 Input   16 Bit       Adders := 8     
+	   7 Input   16 Bit       Adders := 16    
+	  11 Input   16 Bit       Adders := 6     
+	  12 Input   16 Bit       Adders := 1     
+	  14 Input   16 Bit       Adders := 2     
+	  16 Input   16 Bit       Adders := 1     
+	  21 Input   16 Bit       Adders := 2     
+	  22 Input   16 Bit       Adders := 1     
+	  20 Input   16 Bit       Adders := 5     
+	  19 Input   16 Bit       Adders := 3     
+	  13 Input   16 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 365   
+	   3 Input   15 Bit       Adders := 8     
+	   2 Input   14 Bit       Adders := 131   
+	   3 Input   14 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 102   
+	   2 Input   12 Bit       Adders := 67    
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 9     
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 17    
+	   2 Input    4 Bit       Adders := 9     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	              289 Bit    Registers := 1     
+	              288 Bit    Registers := 1     
+	              258 Bit    Registers := 1     
+	              257 Bit    Registers := 2     
+	              256 Bit    Registers := 1     
+	               96 Bit    Registers := 6     
+	               72 Bit    Registers := 3     
+	               64 Bit    Registers := 92    
+	               59 Bit    Registers := 2     
+	               52 Bit    Registers := 2     
+	               32 Bit    Registers := 8     
+	               17 Bit    Registers := 10    
+	               16 Bit    Registers := 797   
+	               15 Bit    Registers := 258   
+	               14 Bit    Registers := 97    
+	               13 Bit    Registers := 25    
+	               12 Bit    Registers := 29    
+	               11 Bit    Registers := 14    
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 380   
++---RAMs : 
+	              64K Bit	(255 X 258 bit)          RAMs := 1     
+	               4K Bit	(15 X 288 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input  257 Bit        Muxes := 1     
+	   2 Input  256 Bit        Muxes := 2     
+	   2 Input   96 Bit        Muxes := 2     
+	   2 Input   72 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 8     
+	   2 Input   52 Bit        Muxes := 2     
+	   9 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 30    
+	   2 Input   15 Bit        Muxes := 93    
+	   3 Input   13 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 12    
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 21    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 8     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 61    
+	   3 Input    2 Bit        Muxes := 15    
+	   4 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 97    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U33/dout, operation Mode is: A*(B:0xd).
+DSP Report: operator mul_16s_5ns_21_1_1_U33/dout is absorbed into DSP mul_16s_5ns_21_1_1_U33/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U27/dout, operation Mode is: A''*(B:0xd).
+DSP Report: register a_V_2_reg_105645_reg is absorbed into DSP mul_16s_5ns_21_1_1_U27/dout.
+DSP Report: register a_V_2_reg_105645_pp0_iter71_reg_reg is absorbed into DSP mul_16s_5ns_21_1_1_U27/dout.
+DSP Report: operator mul_16s_5ns_21_1_1_U27/dout is absorbed into DSP mul_16s_5ns_21_1_1_U27/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U18/dout, operation Mode is: A*(B:0xb).
+DSP Report: operator mul_16s_5ns_21_1_1_U18/dout is absorbed into DSP mul_16s_5ns_21_1_1_U18/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U19/dout, operation Mode is: A''*(B:0xb).
+DSP Report: register a_V_9_reg_105728_reg is absorbed into DSP mul_16s_5ns_21_1_1_U19/dout.
+DSP Report: register a_V_9_reg_105728_pp0_iter71_reg_reg is absorbed into DSP mul_16s_5ns_21_1_1_U19/dout.
+DSP Report: operator mul_16s_5ns_21_1_1_U19/dout is absorbed into DSP mul_16s_5ns_21_1_1_U19/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U1/dout, operation Mode is: A*(B:0xb).
+DSP Report: operator mul_16s_5ns_21_1_1_U1/dout is absorbed into DSP mul_16s_5ns_21_1_1_U1/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U22/dout, operation Mode is: A*(B:0xd).
+DSP Report: operator mul_16s_5ns_21_1_1_U22/dout is absorbed into DSP mul_16s_5ns_21_1_1_U22/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U28/dout, operation Mode is: A''*(B:0xd).
+DSP Report: register a_V_3_reg_105657_reg is absorbed into DSP mul_16s_5ns_21_1_1_U28/dout.
+DSP Report: register a_V_3_reg_105657_pp0_iter71_reg_reg is absorbed into DSP mul_16s_5ns_21_1_1_U28/dout.
+DSP Report: operator mul_16s_5ns_21_1_1_U28/dout is absorbed into DSP mul_16s_5ns_21_1_1_U28/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U8/dout, operation Mode is: A''*(B:0xd).
+DSP Report: register a_V_6_reg_105693_reg is absorbed into DSP mul_16s_5ns_21_1_1_U8/dout.
+DSP Report: register a_V_6_reg_105693_pp0_iter71_reg_reg is absorbed into DSP mul_16s_5ns_21_1_1_U8/dout.
+DSP Report: operator mul_16s_5ns_21_1_1_U8/dout is absorbed into DSP mul_16s_5ns_21_1_1_U8/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U25/dout, operation Mode is: A''*(B:0xb).
+DSP Report: register a_V_3_reg_105657_reg is absorbed into DSP mul_16s_5ns_21_1_1_U25/dout.
+DSP Report: register a_V_3_reg_105657_pp0_iter71_reg_reg is absorbed into DSP mul_16s_5ns_21_1_1_U25/dout.
+DSP Report: operator mul_16s_5ns_21_1_1_U25/dout is absorbed into DSP mul_16s_5ns_21_1_1_U25/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U6/dout, operation Mode is: A''*(B:0xb).
+DSP Report: register a_V_8_reg_105716_reg is absorbed into DSP mul_16s_5ns_21_1_1_U6/dout.
+DSP Report: register a_V_8_reg_105716_pp0_iter71_reg_reg is absorbed into DSP mul_16s_5ns_21_1_1_U6/dout.
+DSP Report: operator mul_16s_5ns_21_1_1_U6/dout is absorbed into DSP mul_16s_5ns_21_1_1_U6/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U9/dout, operation Mode is: A*(B:0xd).
+DSP Report: operator mul_16s_5ns_21_1_1_U9/dout is absorbed into DSP mul_16s_5ns_21_1_1_U9/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U32/dout, operation Mode is: A''*(B:0xb).
+DSP Report: register a_V_5_reg_105681_reg is absorbed into DSP mul_16s_5ns_21_1_1_U32/dout.
+DSP Report: register a_V_5_reg_105681_pp0_iter71_reg_reg is absorbed into DSP mul_16s_5ns_21_1_1_U32/dout.
+DSP Report: operator mul_16s_5ns_21_1_1_U32/dout is absorbed into DSP mul_16s_5ns_21_1_1_U32/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U35/dout, operation Mode is: A''*(B:0xd).
+DSP Report: register a_V_8_reg_105716_reg is absorbed into DSP mul_16s_5ns_21_1_1_U35/dout.
+DSP Report: register a_V_8_reg_105716_pp0_iter71_reg_reg is absorbed into DSP mul_16s_5ns_21_1_1_U35/dout.
+DSP Report: operator mul_16s_5ns_21_1_1_U35/dout is absorbed into DSP mul_16s_5ns_21_1_1_U35/dout.
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[13]' (FDE) to 'mult_V_879_reg_105790_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[1]' (FDE) to 'mult_V_903_reg_105803_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[2]' (FDE) to 'mult_V_888_reg_105797_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[3]' (FDE) to 'mult_V_879_reg_105790_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[4]' (FDE) to 'mult_V_879_reg_105790_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[5]' (FDE) to 'mult_V_879_reg_105790_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[6]' (FDE) to 'mult_V_879_reg_105790_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[7]' (FDE) to 'mult_V_879_reg_105790_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[8]' (FDE) to 'mult_V_879_reg_105790_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[9]' (FDE) to 'mult_V_879_reg_105790_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[10]' (FDE) to 'mult_V_879_reg_105790_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[11]' (FDE) to 'mult_V_879_reg_105790_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mult_V_905_reg_105808_reg[12]' (FDE) to 'mult_V_879_reg_105790_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[12]' (FDE) to 'mult_V_974_reg_105867_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[0]' (FDE) to 'a_V_5_reg_105681_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[1]' (FDE) to 'mult_V_974_reg_105867_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[2]' (FDE) to 'mult_V_974_reg_105867_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[3]' (FDE) to 'mult_V_974_reg_105867_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[4]' (FDE) to 'mult_V_974_reg_105867_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[5]' (FDE) to 'mult_V_974_reg_105867_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[6]' (FDE) to 'mult_V_974_reg_105867_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[7]' (FDE) to 'mult_V_974_reg_105867_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[8]' (FDE) to 'mult_V_974_reg_105867_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[9]' (FDE) to 'mult_V_974_reg_105867_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[10]' (FDE) to 'mult_V_974_reg_105867_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mult_V_976_reg_105873_reg[11]' (FDE) to 'mult_V_974_reg_105867_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[14]' (FDE) to 'a_V_6_reg_105693_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[13]' (FDE) to 'a_V_6_reg_105693_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[0]' (FDE) to 'a_V_6_reg_105693_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[1]' (FDE) to 'mult_V_1025_reg_105907_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[2]' (FDE) to 'a_V_6_reg_105693_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[3]' (FDE) to 'a_V_6_reg_105693_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[4]' (FDE) to 'a_V_6_reg_105693_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[5]' (FDE) to 'a_V_6_reg_105693_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[6]' (FDE) to 'a_V_6_reg_105693_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[7]' (FDE) to 'a_V_6_reg_105693_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[8]' (FDE) to 'a_V_6_reg_105693_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[9]' (FDE) to 'a_V_6_reg_105693_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[10]' (FDE) to 'a_V_6_reg_105693_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[11]' (FDE) to 'a_V_6_reg_105693_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1012_reg_105902_reg[12]' (FDE) to 'a_V_6_reg_105693_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[12]' (FDE) to 'mult_V_947_reg_105840_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[12]' (FDE) to 'mult_V_1078_reg_105949_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[1]' (FDE) to 'mult_V_947_reg_105840_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[2]' (FDE) to 'mult_V_947_reg_105840_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[3]' (FDE) to 'mult_V_947_reg_105840_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[4]' (FDE) to 'mult_V_947_reg_105840_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[5]' (FDE) to 'mult_V_947_reg_105840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[6]' (FDE) to 'mult_V_947_reg_105840_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[7]' (FDE) to 'mult_V_947_reg_105840_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[8]' (FDE) to 'mult_V_947_reg_105840_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[9]' (FDE) to 'mult_V_947_reg_105840_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[10]' (FDE) to 'mult_V_947_reg_105840_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[11]' (FDE) to 'mult_V_854_reg_105774_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[11]' (FDE) to 'mult_V_1078_reg_105949_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[0]' (FDE) to 'mult_V_1057_reg_105934_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[0]' (FDE) to 'mult_V_849_reg_105762_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[1]' (FDE) to 'a_V_8_reg_105716_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[1]' (FDE) to 'mult_V_854_reg_105774_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[2]' (FDE) to 'mult_V_1078_reg_105949_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[2]' (FDE) to 'mult_V_854_reg_105774_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[3]' (FDE) to 'mult_V_1078_reg_105949_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[3]' (FDE) to 'mult_V_854_reg_105774_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[4]' (FDE) to 'mult_V_1078_reg_105949_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[4]' (FDE) to 'mult_V_854_reg_105774_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[5]' (FDE) to 'mult_V_1078_reg_105949_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[5]' (FDE) to 'mult_V_854_reg_105774_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[6]' (FDE) to 'mult_V_1078_reg_105949_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[6]' (FDE) to 'mult_V_854_reg_105774_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[7]' (FDE) to 'mult_V_1078_reg_105949_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[7]' (FDE) to 'mult_V_854_reg_105774_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[8]' (FDE) to 'mult_V_1078_reg_105949_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[8]' (FDE) to 'mult_V_854_reg_105774_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[9]' (FDE) to 'mult_V_1078_reg_105949_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[9]' (FDE) to 'mult_V_854_reg_105774_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1061_reg_105939_reg[10]' (FDE) to 'mult_V_1078_reg_105949_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mult_V_852_reg_105768_reg[10]' (FDE) to 'mult_V_854_reg_105774_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mult_V_945_reg_105835_reg[11]' (FDE) to 'mult_V_947_reg_105840_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[13]' (FDE) to 'mult_V_854_reg_105774_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[12]' (FDE) to 'mult_V_854_reg_105774_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[11]' (FDE) to 'mult_V_854_reg_105774_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[10]' (FDE) to 'mult_V_854_reg_105774_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[9]' (FDE) to 'mult_V_854_reg_105774_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[8]' (FDE) to 'mult_V_854_reg_105774_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[7]' (FDE) to 'mult_V_854_reg_105774_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[6]' (FDE) to 'mult_V_854_reg_105774_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[4]' (FDE) to 'mult_V_854_reg_105774_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[3]' (FDE) to 'mult_V_854_reg_105774_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[2]' (FDE) to 'a_V_1_reg_105633_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[1]' (FDE) to 'mult_V_855_reg_105779_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[0]' (FDE) to 'a_V_1_reg_105633_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mult_V_849_reg_105762_reg[5]' (FDE) to 'mult_V_854_reg_105774_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1025_reg_105907_reg[13]' (FDE) to 'a_V_6_reg_105693_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1025_reg_105907_reg[0]' (FDE) to 'a_V_6_reg_105693_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1025_reg_105907_reg[1]' (FDE) to 'a_V_6_reg_105693_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1025_reg_105907_reg[2]' (FDE) to 'a_V_6_reg_105693_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1025_reg_105907_reg[3]' (FDE) to 'a_V_6_reg_105693_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1025_reg_105907_reg[4]' (FDE) to 'a_V_6_reg_105693_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1025_reg_105907_reg[5]' (FDE) to 'a_V_6_reg_105693_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mult_V_1025_reg_105907_reg[6]' (FDE) to 'a_V_6_reg_105693_reg[8]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U20/dout, operation Mode is: A*(B:0xb).
+DSP Report: operator mul_16s_5ns_21_1_1_U20/dout is absorbed into DSP mul_16s_5ns_21_1_1_U20/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U13/dout, operation Mode is: A*(B:0xd).
+DSP Report: operator mul_16s_5ns_21_1_1_U13/dout is absorbed into DSP mul_16s_5ns_21_1_1_U13/dout.
+DSP Report: Generating DSP mult_V_970_reg_106442_reg, operation Mode is: (A*(B:0xd))'.
+DSP Report: register mult_V_970_reg_106442_reg is absorbed into DSP mult_V_970_reg_106442_reg.
+DSP Report: operator mul_16s_5ns_21_1_1_U15/dout is absorbed into DSP mult_V_970_reg_106442_reg.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U30/dout, operation Mode is: A*(B:0xb).
+DSP Report: operator mul_16s_5ns_21_1_1_U30/dout is absorbed into DSP mul_16s_5ns_21_1_1_U30/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U14/dout, operation Mode is: A*(B:0xd).
+DSP Report: operator mul_16s_5ns_21_1_1_U14/dout is absorbed into DSP mul_16s_5ns_21_1_1_U14/dout.
+DSP Report: Generating DSP mul_16s_5ns_21_1_1_U24/dout, operation Mode is: A*(B:0xb).
+DSP Report: operator mul_16s_5ns_21_1_1_U24/dout is absorbed into DSP mul_16s_5ns_21_1_1_U24/dout.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sext_ln1319_433_reg_106140_reg[3] )
+WARNING: [Synth 8-3917] design myproject__GCB0 has port s_axi_control_BRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design myproject__GCB0 has port s_axi_control_BRESP[0] driven by constant 0
+WARNING: [Synth 8-3917] design myproject__GCB0 has port s_axi_control_RRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design myproject__GCB0 has port s_axi_control_RRESP[0] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/load_unit/\tmp_addr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/store_unit/\tmp_addr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_write/\could_multi_bursts.awlen_buf_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_write/\could_multi_bursts.awlen_buf_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_write/\could_multi_bursts.awaddr_buf_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_read/\could_multi_bursts.arlen_buf_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_read/\could_multi_bursts.araddr_buf_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\grp_sigmoid_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_sigmoid_config10_s_fu_283/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_read/\rs_rreq/data_p2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_write/\rs_wreq/data_p2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_write/\fifo_burst/U_fifo_srl/dout_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_read/\rs_rreq/data_p1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_write/\rs_wreq/data_p1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_write/\wreq_throttle/req_fifo/U_fifo_srl/dout_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/store_unit/\fifo_wreq/U_fifo_srl/dout_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_write/\wreq_throttle/rs_req/data_p2_reg[68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_m_axi_U/bus_write/\wreq_throttle/rs_req/data_p1_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:25 ; elapsed = 00:02:47 . Memory (MB): peak = 4077.988 ; gain = 756.762 ; free physical = 21519 ; free virtual = 51950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name             | RTL Object                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|gmem_m_axi_U/store_unit | buff_wdata/U_fifo_mem/mem_reg | 15 x 288(READ_FIRST)   | W |   | 15 x 288(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      |                 | 
+|gmem_m_axi_U/load_unit  | buff_rdata/U_fifo_mem/mem_reg | 255 x 258(READ_FIRST)  | W |   | 255 x 258(WRITE_FIRST) |   | R | Port A and B     | 0      | 4      |                 | 
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                                    | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|myproject_mul_16s_5ns_21_1_1                                                   | A*(B:0xd)    | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject                                                                      | A''*(B:0xd)  | 16     | 5      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | A*(B:0xb)    | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject                                                                      | A''*(B:0xb)  | 16     | 5      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | A*(B:0xb)    | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | A*(B:0xd)    | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | A''*(B:0xd)  | 16     | 5      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | A''*(B:0xd)  | 16     | 5      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | A''*(B:0xb)  | 16     | 5      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | A''*(B:0xb)  | 16     | 5      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | A*(B:0xd)    | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | A''*(B:0xb)  | 16     | 5      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | A''*(B:0xd)  | 16     | 5      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | A*(B:0xb)    | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | A*(B:0xd)    | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB4 | (A*(B:0xd))' | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | A*(B:0xb)    | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | A*(B:0xd)    | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | A*(B:0xb)    | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:42 ; elapsed = 00:03:06 . Memory (MB): peak = 4358.230 ; gain = 1037.004 ; free physical = 21660 ; free virtual = 52143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:25 ; elapsed = 00:03:50 . Memory (MB): peak = 4567.309 ; gain = 1246.082 ; free physical = 21470 ; free virtual = 51973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name             | RTL Object                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|gmem_m_axi_U/store_unit | buff_wdata/U_fifo_mem/mem_reg | 15 x 288(READ_FIRST)   | W |   | 15 x 288(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      |                 | 
+|gmem_m_axi_U/load_unit  | buff_rdata/U_fifo_mem/mem_reg | 255 x 258(READ_FIRST)  | W |   | 255 x 258(WRITE_FIRST) |   | R | Port A and B     | 0      | 4      |                 | 
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/i_0/gmem_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg_2' (RAMB36E2) to 'inst/i_0/gmem_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg_1'
+INFO: [Synth 8-7052] The timing for the instance inst/i_0/gmem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_0/gmem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_0/gmem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_0/gmem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:15 ; elapsed = 00:04:58 . Memory (MB): peak = 4579.234 ; gain = 1258.008 ; free physical = 20779 ; free virtual = 51274
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:34 ; elapsed = 00:05:18 . Memory (MB): peak = 4606.172 ; gain = 1284.945 ; free physical = 20718 ; free virtual = 51265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:35 ; elapsed = 00:05:18 . Memory (MB): peak = 4606.172 ; gain = 1284.945 ; free physical = 20718 ; free virtual = 51265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:45 ; elapsed = 00:05:28 . Memory (MB): peak = 4606.172 ; gain = 1284.945 ; free physical = 20710 ; free virtual = 51258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:45 ; elapsed = 00:05:28 . Memory (MB): peak = 4606.172 ; gain = 1284.945 ; free physical = 20710 ; free virtual = 51258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:46 ; elapsed = 00:05:30 . Memory (MB): peak = 4606.172 ; gain = 1284.945 ; free physical = 20710 ; free virtual = 51258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:46 ; elapsed = 00:05:30 . Memory (MB): peak = 4606.172 ; gain = 1284.945 ; free physical = 20710 ; free virtual = 51258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|myproject   | layer10_out_read_reg_1067_pp0_iter80_reg_reg[63] | 81     | 59    | NO           | NO                 | NO                | 0      | 177     | 
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name    | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[67] | 96     | 96         | 0      | 288     | 192    | 96     | 0      | 
+|dsrl__1     | mem_reg[14] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[67] | 1      | 1          | 0      | 3       | 2      | 1      | 0      | 
+|dsrl__3     | mem_reg[14] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[14] | 72     | 72         | 72     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[14] | 289    | 289        | 289    | 0       | 0      | 0      | 0      | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                                    | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB4 | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject                                                                      | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject                                                                      | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s__GB0 | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_mul_16s_5ns_21_1_1                                                   | (A''*B)'    | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 1    | 
++-------------------------------------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |  5160|
+|2     |DSP_ALU         |    19|
+|3     |DSP_A_B_DATA    |    19|
+|4     |DSP_C_DATA      |    19|
+|6     |DSP_MULTIPLIER  |    19|
+|7     |DSP_M_DATA      |    19|
+|8     |DSP_OUTPUT      |    19|
+|9     |DSP_PREADD      |    19|
+|10    |DSP_PREADD_DATA |    19|
+|11    |LUT1            |  2650|
+|12    |LUT2            | 19320|
+|13    |LUT3            | 11738|
+|14    |LUT4            | 12167|
+|15    |LUT5            |  3956|
+|16    |LUT6            |  4991|
+|17    |MUXF7           |   151|
+|18    |RAMB18E2        |     1|
+|19    |RAMB36E2        |     7|
+|21    |SRL16E          |   359|
+|22    |SRLC32E         |   630|
+|23    |FDRE            | 19976|
+|24    |FDSE            |     5|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:47 ; elapsed = 00:05:30 . Memory (MB): peak = 4606.172 ; gain = 1284.945 ; free physical = 20710 ; free virtual = 51258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:38 ; elapsed = 00:05:18 . Memory (MB): peak = 4610.082 ; gain = 1121.480 ; free physical = 23797 ; free virtual = 54345
+Synthesis Optimization Complete : Time (s): cpu = 00:04:53 ; elapsed = 00:05:33 . Memory (MB): peak = 4610.082 ; gain = 1288.855 ; free physical = 23812 ; free virtual = 54345
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.78 . Memory (MB): peak = 4610.082 ; gain = 0.000 ; free physical = 23763 ; free virtual = 54296
+INFO: [Netlist 29-17] Analyzing 5330 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4652.359 ; gain = 0.000 ; free physical = 23661 ; free virtual = 54193
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 19 instances
+
+Synth Design complete, checksum: be4444ca
+INFO: [Common 17-83] Releasing license: Synthesis
+244 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:20 ; elapsed = 00:06:02 . Memory (MB): peak = 4652.359 ; gain = 1739.430 ; free physical = 23993 ; free virtual = 54525
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_myproject_1_0_synth_1/ulp_myproject_1_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4684.375 ; gain = 32.016 ; free physical = 23984 ; free virtual = 54528
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ulp_myproject_1_0, cache-ID = 12b77cf3d5ce36eb
+INFO: [Coretcl 2-1174] Renamed 79 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/csl/sky/hls4ml_practice/hls4ml_prj_u55c_new/xclbin_files/_x/link/vivado/vpl/prj/prj.runs/ulp_myproject_1_0_synth_1/ulp_myproject_1_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4684.375 ; gain = 0.000 ; free physical = 23904 ; free virtual = 54526
+INFO: [runtcl-4] Executing : report_utilization -file ulp_myproject_1_0_utilization_synth.rpt -pb ulp_myproject_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 16 07:51:14 2025...
